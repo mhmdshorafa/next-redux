@@ -1,9 +1,7 @@
-import { 
-  serverRenderClock,
-  startClock
- } from './clockActions/clockActions';
+import {
+  isFileLoading
+} from './homeActions/homeActions';
 
 export {
-  serverRenderClock,
-  startClock
+  isFileLoading
 };

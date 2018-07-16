@@ -1,1 +1,1 @@
-export const TICK = 'TICK';
+export const ISLOADING = 'ISLOADING';

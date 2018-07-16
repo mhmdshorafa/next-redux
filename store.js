@@ -1,14 +1,12 @@
-import { createStore, applyMiddleware } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import thunkMiddleware from 'redux-thunk'
-import reducers from './reducers/index'
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunkMiddleware from 'redux-thunk';
+import reducers from './reducers/index';
 
-const clock = {
-  lastUpdate: 0,
-  light: false,
-  count: 0
-}
+const uplaodFileStatusInitialState = {
+  uploadFile: false
+};
 
-export function initializeStore (initialState = clock) {
-  return createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
+export function initializeStore (initialState = uplaodFileStatusInitialState) {
+  return createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 }

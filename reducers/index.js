@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 
-import { clockReducer } from './clockReducers/index';
+import { uploadFileReducer } from './homeReducers/index';
 const rootReducer = combineReducers({
-  clock: clockReducer
+  uploadFile: uploadFileReducer
 });
 
 export default rootReducer;
